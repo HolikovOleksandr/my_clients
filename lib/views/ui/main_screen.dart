@@ -26,7 +26,7 @@ class _MainScreenState extends State<MainScreen> {
     return Consumer<MainScreenNotifier>(
       builder: (context, mainScreenNotifier, child) {
         return Scaffold(
-          backgroundColor: const Color(0xFFF7F6FE),
+          backgroundColor: AppTheme.backgroundColorSryle,
           body: tabList[mainScreenNotifier.pageIndex],
           bottomNavigationBar: const BottomNavBar(),
         );

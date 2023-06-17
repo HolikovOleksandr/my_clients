@@ -6,6 +6,7 @@ class AppTheme {
   static const Color secondaryColorStyle = Color(0xFFB5B4B9);
   static const Color bottomNavBarColorStyle = Color(0xFFF8F7FF);
   static const Color backgroundColorSryle = Color(0xFFF7F6FE);
+  static const Color whiteColorStyle = Color(0xFFFFFFFF);
   // ----------------
 
   // -----Fonts-----
