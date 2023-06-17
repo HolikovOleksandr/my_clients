@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_clients/app_theme.dart';
+import 'package:my_clients/utils/app_theme.dart';
 import 'package:my_clients/controllers/main_screen_provider.dart';
-import 'package:my_clients/views/ui/tabs/tabs_import.dart';
+import 'package:my_clients/views/screens/tabs/tabs_import.dart';
 import 'package:my_clients/views/widgets/bottom_nav_bar.dart';
 import 'package:provider/provider.dart';
 

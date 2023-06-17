@@ -16,26 +16,12 @@ class BottomNavWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: GestureDetector(
-        onTap: onTab,
-        child: Column(
-          children: [
-            const SizedBox(height: 8),
-            Icon(
-              icon,
-              size: 28,
-              color: color,
-            ),
-            Text(
-              lable,
-              style: TextStyle(
-                fontSize: 14,
-                color: color,
-              ),
-            ),
-          ],
-        ),
+    return GestureDetector(
+      onTap: onTab,
+      child: SizedBox(
+        height: 36,
+        width: 36,
+        child: Icon(icon, color: color)
       ),
     );
   }
