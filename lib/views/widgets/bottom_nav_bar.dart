@@ -1,5 +1,5 @@
 import 'package:my_clients/utils/app_theme.dart';
-import 'package:my_clients/controllers/main_screen_provider.dart';
+import 'package:my_clients/providers/main_screen_provider.dart';
 import 'package:my_clients/views/widgets/bottom_nav_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

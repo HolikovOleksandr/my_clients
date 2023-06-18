@@ -2,8 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:my_clients/controllers/sign_in_provider.dart';
+import 'package:my_clients/providers/sign_in_provider.dart';
 import 'package:my_clients/utils/config.dart';
+import 'package:my_clients/utils/next_screen.dart';
 import 'package:my_clients/views/screens/login_screen.dart';
 import 'package:my_clients/views/screens/main_screen.dart';
 import 'package:provider/provider.dart';
@@ -23,10 +24,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(const Duration(seconds: 2), () {
       !sp.isSignedIn
-          ? Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context) => const LoginScreen()))
-          : Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context) => const MainScreen()));
+          ? nextScreen(context, const LoginScreen())
+          : nextScreen(context, const MainScreen());
     });
   }
 

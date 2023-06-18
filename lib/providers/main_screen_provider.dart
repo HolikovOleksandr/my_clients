@@ -2,8 +2,8 @@ import 'package:flutter/widgets.dart';
 
 class MainScreenProvider extends ChangeNotifier {
   int _pageIndex = 0;
-  int get pageIndex => _pageIndex;
 
+  int get pageIndex => _pageIndex;
   set pageIndex(int newIndex) {
     _pageIndex = newIndex;
     notifyListeners();
