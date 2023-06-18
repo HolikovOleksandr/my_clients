@@ -23,10 +23,10 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<MainScreenNotifier>(
+    return Consumer<MainScreenProvider>(
       builder: (context, mainScreenNotifier, child) {
         return Scaffold(
-          backgroundColor: AppTheme.backgroundColorSryle,
+          backgroundColor: AppTheme.sixstage,
           body: tabList[mainScreenNotifier.pageIndex],
           bottomNavigationBar: const BottomNavBar(),
         );

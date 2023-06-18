@@ -20,7 +20,7 @@ class ClientCardWidget extends StatelessWidget {
           child: Container(
             width: size.width,
             height: size.height * .18,
-            color: AppTheme.whiteColorStyle,
+            color: AppTheme.sixstage,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -28,7 +28,7 @@ class ClientCardWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
-                      color: AppTheme.primaryColorStyle,
+                      color: AppTheme.secondary,
                       height: size.height,
                       width: size.width * .035,
                     ),
@@ -39,8 +39,8 @@ class ClientCardWidget extends StatelessWidget {
                       children: [
                         RichText(
                           text: TextSpan(
-                            style: AppTheme.headerTextStyle.copyWith(
-                              color: AppTheme.primaryColorStyle,
+                            style: AppTheme.title.copyWith(
+                              color: AppTheme.darkPrimary,
                             ),
                             children: <TextSpan>[
                               TextSpan(text: 'First '),
@@ -51,21 +51,21 @@ class ClientCardWidget extends StatelessWidget {
                         // Number
                         Text(
                           '+380123456789',
-                          style: AppTheme.bodyTextStyle,
+                          style: AppTheme.title,
                         ),
                         RichText(
                           text: TextSpan(
                             children: [
                               TextSpan(
                                 text: '90',
-                                style: AppTheme.headerTextStyle.copyWith(
-                                  color: AppTheme.primaryColorStyle,
+                                style: AppTheme.title.copyWith(
+                                  color: AppTheme.darkPrimary,
                                 ),
                               ),
                               TextSpan(
                                 text: ' Anti-cellulite',
-                                style: AppTheme.bodyTextStyle.copyWith(
-                                  color: AppTheme.primaryColorStyle,
+                                style: AppTheme.text.copyWith(
+                                  color: AppTheme.darkPrimary,
                                 ),
                               ),
                             ],
@@ -76,14 +76,14 @@ class ClientCardWidget extends StatelessWidget {
                             children: <TextSpan>[
                               TextSpan(
                                 text: 'Today at: ',
-                                style: AppTheme.bodyTextStyle.copyWith(
-                                  color: AppTheme.primaryColorStyle,
+                                style: AppTheme.text.copyWith(
+                                  color: AppTheme.darkPrimary,
                                 ),
                               ),
                               TextSpan(
                                 text: '16:20',
-                                style: AppTheme.headerTextStyle.copyWith(
-                                  color: AppTheme.primaryColorStyle,
+                                style: AppTheme.text.copyWith(
+                                  color: AppTheme.darkPrimary,
                                 ),
                               ),
                             ],

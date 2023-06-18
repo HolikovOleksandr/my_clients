@@ -9,18 +9,18 @@ class BottomNavBar extends StatelessWidget {
 
   Color _isActiveTab(int index, var mainScreenNotifier) {
     return mainScreenNotifier.pageIndex == index
-        ? AppTheme.primaryColorStyle
-        : AppTheme.secondaryColorStyle;
+        ? AppTheme.primary
+        : AppTheme.sixstage;
   }
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return Consumer<MainScreenNotifier>(
+    return Consumer<MainScreenProvider>(
       builder: (context, mainScreenNotifier, child) => SafeArea(
         child: Container(
           height: size.height * .09,
-          color: AppTheme.bottomNavBarColorStyle,
+          color: AppTheme.fivestage,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,7 +41,7 @@ class BottomNavBar extends StatelessWidget {
                 width: 66,
                 child: FloatingActionButton(
                   onPressed: () => mainScreenNotifier.pageIndex = 2,
-                  backgroundColor: AppTheme.primaryColorStyle,
+                  backgroundColor: AppTheme.primary,
                   child: const Icon(Icons.add_rounded, size: 34),
                 ),
               ),
