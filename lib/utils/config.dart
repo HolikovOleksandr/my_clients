@@ -1,3 +1,3 @@
 class Config {
-  static const splashScreenImage = 'assets/splash_image.svg';
+  static const splashScreenImage = 'assets/images/splash_image.svg';
 }
