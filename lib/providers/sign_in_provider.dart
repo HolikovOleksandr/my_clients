@@ -172,7 +172,6 @@ class SignInProvider extends ChangeNotifier {
   Future userSignOut() async {
     await firebaseAuth.signOut();
     await googleSignIn.signOut();
-
     _isSignedIn = false;
     notifyListeners();
 

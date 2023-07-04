@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:my_clients/utils/app_theme.dart';
 
-class BottomNavWidget extends StatelessWidget {
-  const BottomNavWidget({
+class BottomNavItem extends StatelessWidget {
+  const BottomNavItem({
     required this.onTab,
     required this.icon,
     required this.color,
@@ -18,10 +19,19 @@ class BottomNavWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTab,
-      child: SizedBox(
-        height: 36,
-        width: 36,
-        child: Icon(icon, color: color)
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(
+            height: 36,
+            width: 36,
+            child: Icon(icon, color: color),
+          ),
+          Text(
+            lable,
+            style: AppTheme.hintText.copyWith(color: color),
+          ),
+        ],
       ),
     );
   }

@@ -6,17 +6,19 @@ class AppTheme {
   static const primary = Color(0xFF521491);
   static const secondary = Color(0xFF731FB6);
   static const tertiary = Color(0xFFB32EDC);
-  static const quaternary = Color(0xFFE37EE7);
-  static const fivestage = Color(0xFFE3CCE9);
-  static const sixstage = Color(0xFFF7F6FE);
+  static const quaternary = Color.fromARGB(255, 235, 123, 239);
+  static const fivestage = Color.fromARGB(255, 243, 177, 245);
+  static const sixstage = Color.fromARGB(255, 239, 213, 246);
+  static const sevenstage = Color(0xFFF7F6FE);
   static const gradient = LinearGradient(
     colors: [
       Color(0xFF521491),
-      Color(0xFF731FB6),
-      Color(0xFFB32EDC),
+      Color.fromARGB(255, 173, 45, 211),
       Color(0xFFE37EE7),
       Color(0xFFE3CCE9),
     ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
   );
 
   // -----Fonts-----
